@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-image: url(tengo.jpg);
+    padding-bottom: 15px;
+}
+
+header h1{
+    font-variant: small-caps;
+    margin-top: 0px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    background-color: black ;
+}
+
+article{
+    width: 500px;
+    margin: auto;
+}
+
+article #kerdesek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article #kerdesek img{
+    width: 100%;
+}
