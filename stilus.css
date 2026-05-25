@@ -1,4 +1,5 @@
 *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -9,31 +10,79 @@ body{
 header{
     text-align: center;
     color: white;
-    background-image: url(tengo.jpg);
-    padding-bottom: 15px;
+    background-image: url(tengo.png);
+    padding: 10px 0px 30px 0px;
 }
 
 header h1{
     font-variant: small-caps;
-    margin-top: 0px;
+    margin: 0px;
+    padding: 10px 0px 30px 0px;
+    font-size: 45px;
 }
 
-header a{
+header nav a{
     text-decoration: none;
+    font-weight: bolder;
     color: white;
-    background-color: black ;
+    background-color: rgba(0, 0, 0, 0.471);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 article{
-    width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
 article #kerdesek{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top:25px;
+}
+
+article #kerdesek div{
+    border: 2px solid grey;
+    padding: 15px;
 }
 
 article #kerdesek img{
     width: 100%;
+}
+
+article #velemenyek{
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top:25px;
+}
+
+article #velemenyek div{
+    border: 2px solid grey;
+    padding: 5px;
+    margin: 8px
+}
+
+@media screen and (max-width: 600px) {
+    header nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header nav a{
+        margin: 5px;
+    }
+
+    article #kerdesek{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    article #kerdesek div{
+        margin: 8px;
+    }
 }
